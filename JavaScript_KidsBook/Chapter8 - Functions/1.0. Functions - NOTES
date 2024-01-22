@@ -1,0 +1,45 @@
+JavaScript functions - Key Concepts:
+
+1. Function Declarations: 
+A function declaration starts with the function keyword, followed by the function name, 
+parentheses with parameters, and a block of code enclosed in curly braces. Function declarations 
+are hoisted, which means they can be called before they are defined in the code.
+
+2. Function Expressions: 
+A function expression is a function assigned to a variable. 
+Function expressions are not hoisted, meaning they must be defined before being called. An anonymous function with no name can also be a part of function expressions.
+
+3. Arrow Functions: 
+A concise, modern syntax for creating functions without the function keyword. 
+Arrow functions are particularly useful for short, single-expression tasks and 
+have a different handling of the this keyword.
+
+4. Function Parameters: 
+Functions can have parameters, which allow you to pass arguments to be used within the function's code. 
+Default parameters can also be defined, ensuring that a value will always be provided when the function is called, 
+even if no arguments are given.
+
+5. Function Return Values: 
+Functions can return values, which can be used after the function has been called. 
+If no return statement is specified, then the function returns "undefined" by default.
+
+6. Scope and Closure: 
+Functions have their own scope, meaning that variables declared inside a function can only be accessed within that function. 
+However, a function can access variables declared outside its scope, through closure.
+
+JavaScript function patterns and use cases include:
+
+1. Higher Order Functions: 
+Functions that accept other functions as arguments or return them as values.
+
+2. Recursion: 
+When a function calls itself within its definition. This technique can be useful in solving 
+complex problems like traversing a tree structure or performing mathematical calculations.
+
+3. Function Currying: 
+The process of converting a function that takes multiple arguments into a series of functions 
+that take one argument each, enabling the creation of specialized functions from a general one.
+
+4. Function Composition: 
+The process of combining two or more functions, so that the output of one function serves as the
+input of the next function, creating a new function that represents their composition.
