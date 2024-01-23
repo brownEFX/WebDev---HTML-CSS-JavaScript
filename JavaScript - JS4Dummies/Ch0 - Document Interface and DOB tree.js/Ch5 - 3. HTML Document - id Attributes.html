@@ -1,0 +1,96 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+	<head>
+		<html lang="en-UK">
+		<meta charset="UTF-8"> <!--Define the character set used:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+        <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+        <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+        <title>document.getElementBy...</title>	
+	
+		<style>
+			body { 
+				font-family: Verdana,sans-serif;
+				font-size: 15px;
+				line-height: 1.5;
+			}
+			h1{
+				color: black;
+				font-family:Helvetica;
+				font-size: 1.6em;
+				font-weight: bold;
+				line-height: 1.25em;
+				margin-bottom: 12px;
+				}
+			h2{
+				color: black;
+				font-family:Arial;
+				font-size: 1.2em;
+				font-weight: bold;
+				}
+			table, p{
+				color: black;
+				font-size: 16px;
+				font-weight: normal;
+				/*font-family:'Segoe UI'; "font-family:Segoe UI, Tahoma, sans-serif;"*/
+				font-family: Arial /*Segoe UI, Tahoma, sans-serif; */
+				}
+			table, th, td {
+				border:1px solid black;
+				/*To avoid double-borders*/
+				border-collapse: collapse;
+				/*To give borders rounded corners:
+				border-radius: 10px;
+				/*{{dotted, dashed, solid, double, groove, ridge, inset, outset, hidden, none}}*/
+				border-style: solid  
+				}
+			tr:nth-child(even) {
+				background-color: #D6EEEE;
+				}
+			tr:hover {
+				background-color: #D6EEEE;
+				}
+		</style>
+		
+	</head>
+	<body>
+		<p id="myParagraph">This is <em>my</em> paragraph.</p>
+
+		<h1 id="myName">Karabo</h1>
+		<hr>
+		<p id="aboutMe"><em>I'm learning to build dynamic web pages with JavaScript and HTML.</em></p>
+		<hr>
+		<h2>My hobbies</h2>
+		<p>Here are some of my favourite things:</p>
+		<ul>
+			<caption><b>My List of Hobbies</b></caption>
+			<li id="firstHobby">Read</li>
+			<li id="secondHobby">Write</li>
+			<li id="thirdHobby">Run</li>
+		</ul>
+
+		<button id="changeHobbies" type="button">Change Your Hobbies</button>
+		<hr>
+	
+
+		<h2>My Study Plan</h2>
+		<p>Here are some of my favourite things:</p>
+		<ol>
+			<caption><b>My Course List</b></caption>
+			<li id="firstCourse">HTML</li>
+			<li id="secondCourse">CSS</li>
+			<li id="thirdCourse">JavaScript</li>
+			<li id="fourthCourse">Java</li>
+			<li id="fifthCourse">SQL</li>
+			<li id="sixthCourse">Postman</li>
+		</ol>
+
+		<button id="changeCourses" type="button">Change Your Courses</button>
+		<hr>
+
+		<script src="Ch5 - 3. HTML Document - id Attributes.js">
+        </script>
+	</body>
+</html>
