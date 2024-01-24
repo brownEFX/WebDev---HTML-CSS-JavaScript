@@ -1,0 +1,66 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+	<head>
+		<html lang="en-UK">
+		<meta charset="UTF-8"> <!--Define the character set used:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+        <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+        <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+        <title>Programming the Web</title>	
+	
+		<style>
+
+			/*Element Selector Uses elementName*/
+			body { 
+				/*font-family: Arial;*/
+				font-family: Helvetica; /*"Comic Sans MS", cursive, sans‐serif;*/
+			}
+			/*CSS Declarations:Property:Value*/
+			p {
+				font-size: 1.0em; /*em = relative to the font-size of the element (2em means 2 times the size of the current font)*/
+			}
+        </style>
+        <body>
+            <h1>Expressions</h1>
+                <p>
+                    An expression in JavaScript is any valid piece of code that resolves to a value.
+                    Expressions are made up of operands
+                </p>
+
+            <h1>Operands</h1>
+            <p>
+                Definition: operators that you can use to perform operations on values and variables <br>
+
+                <a href="https://www.freecodecamp.org/news/javascript-operators/#:~:text=JavaScript%20has%20many%20operators%20that,Arithmetic%20Operators">JS Operands</a> <br>
+            </p>
+                <h2>Groups of Operands</h2>
+                <p><pre>
+                    1. Arithmetic Operators : used to perform mathematical operations like +, -, /, *, %, **, ++, --.
+                    2. Assigbment Operators: Assignment operators are used to assign a specific value to a variable. =, +=, -=, *=, /=, %=, **=
+                    3. Comparison Operators: used to compare one value or variable with something else. [Boolean: T | F] ==, ===, !=, !==, >, >=, <, <=, 
+                    4. Logical Operators: used to check whether one or more expressions result in either true or false. &&, ||, !
+                    5. Ternary/Conditional Operators: If...Else | condition ? exprIfTrue : exprIfFalse [? expression1 : expression2];
+                    6. typeOf: used to check the data type of the value you placed on the right side of the operator. let x = 5; console.log(typeof x) //  'number'
+                    7. Bitwise Operators: treat their operands as a set of binary digits, but return decimal value. AND &, XOR ^, NOT ~, Left Shift <<, Right Shift >>, Zero-fill Right Shift >>>
+                </pre></p>
+                <hr>
+
+                <h2>Putting it together with Operators</h2>
+                <p>An operator is a symbol that performs a task (an operation) using operands.</p>
+
+                <hr>
+                <h2>addEventListener method in JavaScript</h2>
+                <p>
+                    Tells JavaScript to listen for events
+                    addEventListener method to tell programs what to do when events happen.
+
+                    EventListener Syntax:  eventTarget.addEventListener("eventName", listener)
+                        
+                </p>
+                <hr>
+
+                <script src="0. Operators - Notes.js"> </script>
+
+        </body>

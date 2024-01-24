@@ -1,0 +1,171 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+
+<head>
+    <a href="https://www.w3schools.com/html/html_head.asp">HTML Head</a>
+    <html lang="en-UK">
+    <meta charset="UTF-8"> <!--Define the character set used:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+    <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+    <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+    <title>Super Calculator</title>
+
+    <style>
+        body {
+            font-family: "Courier New", Courier, monospace;
+            font-size: .85em;
+        }
+
+        header {
+            text-align: center;
+        }
+
+        h2 {
+    text-align: center;
+    font-size: 1.2em;
+    border-top: 2px ridge gray;
+    border-bottom: 2px ridge gray;
+}
+input[type=text] {
+    width: 40px;
+    height: 20px;
+    margin-left: 20px;
+    border: ridge;
+    border-color: gray;
+    background-color: #DADADA;
+    font-size: 1.0em;
+    text-align: center;
+}
+#operand1-type, #operand2-type {
+    width: 100px;
+    height: 25px;
+    margin-left: 20px;
+     border: ridge;
+    border-color: gray;
+    background-color: #DADADA;
+    font-size: 1.0em;
+    text-align: center;
+}
+
+        input[type=submit] {
+            width: 200px;
+            font-size: 2em;
+        }
+
+        #calculator {
+            border: 1px solid #dadada;
+            border-radius: 4px;
+            padding: 4px;
+        }
+
+        .input-area {
+            background-color: #42FF8C;
+            padding: 8px;
+            margin: 8px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .operator-choices {
+            text-align: left;
+        }
+
+        .output-area {
+            background-color: #333333;
+            color: #FFFFFF;
+            padding: 8px;
+            margin: 8px;
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="calculator">
+        <header>
+            <h1>JS Super-Calculator</h1>
+            <!--<time>19.11.2023</time>-->
+
+            Wednesday, <time datetime="2023-11-19">19 November 2023</time>
+
+            <p>Get the current date and time:</p>
+            <p id="today"></p>
+
+            by Karabo Tabane
+
+            <p>The super-calculator shows the result of using different operators</p>
+
+        </header>
+        <div class="input-area">
+            <h2>Step 1: Enter the 1st Operand</h2>
+            <label for="operand1"><b>Operand1</b></label>
+            <input type="text" id="operand1" value="1" />
+
+            <label for="operand1-type"><b>Data Type</b></label>
+            <select id="operand1-type">
+                <option value="number">number</option>
+                <option value="string">string</option>
+            </select>
+        </div>
+
+        <div class="input-area">
+            <h2>Step 2: Choose an Operator</h2>
+            <div class="operator-choices">
+                <h3>Arithmetic Operators</h3>
+
+                <input type="radio" name="operator" value="+" checked>+&nbsp;
+                <input type="radio" name="operator" value="-">-&nbsp;
+                <input type="radio" name="operator" value="*">*&nbsp;
+                <input type="radio" name="operator" value="/">/&nbsp;
+                <input type="radio" name="operator" value="%">%&nbsp;
+
+                <h3>String Operator</h3>
+                <input type="radio" name="operator" value="concat">+ (concatenation)&nbsp;
+
+                <h3>Comparison Operators</h3>
+                <input type="radio" name="operator" value="==">==&nbsp;
+                <input type="radio" name="operator" value="===">===&nbsp;
+                <input type="radio" name="operator" value="!=">!=&nbsp;
+                <input type="radio" name="operator" value="!==">!==&nbsp;
+                <input type="radio" name="operator" value=">">&gt;&nbsp;
+                <input type="radio" name="operator" value=">=">&gt;=&nbsp;
+                <input type="radio" name="operator" value="<">&lt;&nbsp;
+                <input type="radio" name="operator" value="<=">&lt;=&nbsp;
+            </div>
+        </div>
+
+        <div class="input-area">
+            <h2>Step 3: Enter the 2nd Operand</h2>
+            <label for="operand2"><b>Operand2</b></label>
+            <input type="text" id="operand2" value="1">
+            <label for="operand2-type"><b>Data Type</b></label>
+            <select id="operand2-type">
+                <option value="number">number</option>
+                <option value="string">string</option>
+            </select>
+        </div>
+
+        <div class="input-area">
+            <h2>Step 4: Click the Button</h2>
+            <input type="submit" id="submit" value="Calculate">
+        </div>
+        <hr>
+        <div class="output-area">
+            <h2>Output</h2>
+
+            <h3>Operation</h2>
+                <span id="final-operation">???</span>
+
+
+                <h3>Return Value:</h2>
+                    <span id="result">???</span>
+        </div>
+    </div>
+
+    <script src="1. Operators - SuperCalc debug.js"> </script>
+
+</body>
+
+</html>
