@@ -1,0 +1,154 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+
+<head>
+    <html lang="en-UK">
+    <meta charset="UTF-8"> <!--Define the character set used:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+    <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+    <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+    <title>Array Methods</title>
+
+    <style>
+        body {
+            font-family: Google Sans,arial,sans-serif; /*Helvetica,sans-serif; | Verdana,sans-serif;*/
+            font-size: 15px;
+            line-height: 1.5;
+            }
+		#arrayMethods, h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+
+			width: 40%;
+		}
+
+		#arrayMethods td,
+		#arrayMethods th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#arrayMethods tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#arrayMethods tr:hover {
+			background-color: #ddd;
+		}
+
+		#arrayMethods th {
+			padding-top: 8px;
+			padding-bottom: 4px;
+			text-align: left;
+			background-color: #000000;
+			border-bottom: 4px solid orange;
+			color: white;
+		}
+        li {
+            /*Line-height creates more space between list items */
+            line-height: 16px;
+            /*Make input field labels UpperCase.*/
+            text-transform: none;
+            /*margin-top for more space between list items*/
+            margin-top: 3px;
+        }
+        #buttonDiv {
+            text-align: left;
+        }
+        #replaceButton {
+            margin-top: 30px;
+            width: 200px;
+        }
+        .replacement {
+            text-decoration: underline ridge blue;
+            /*text-transform: none; | text-transform: uppercase; | text-transform: capitalize;*/
+            /*text-transform: uppercase;*/
+        }
+    </style>
+</head>
+
+<body>
+    <div id="scope">
+        <ol>
+            <!--<li>Test: <input type="text" id="adj1"/></li> -->
+            <li>Creating and Accessing Arrays</li>
+            <li>Changing Array Element Values</li>
+            <li>Working With Array Methods</li>
+            <li>Learning Ways of Arrays</li>
+        </ol>
+        <div id="buttonDiv">
+            <button id="replaceButton">Replace it!</button>
+        </div>
+    </div>
+    
+    <div>
+        <h1>JavaScript Array Methods</h1>
+
+        <table id="arrayMethods">
+            <caption><b>arrayMethods</b></caption>
+            <tr>
+                <th>Method</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td>concat()</td>
+                <td>A new array made up of the current array, joined with other array(s) and/or value(s).</td>
+            </tr>
+            <tr>
+                <td>join()</td>
+                <td>Joins all the elements of an array into a string using default or specified separator.</td>
+            </tr>
+            <tr>
+                <td>indexOf()</td>
+                <td>Returns the first occurrence of the specified value or –1 if the value is not found.</td>
+            </tr>
+            <tr>
+                <td>lastIndexOf()</td>
+                <td>Returns the last occurrence of the specified value or –1 if the value is not found.</td>
+            </tr>
+            <tr>
+                <td>push()</td>
+                <td>Adds new items to the end of an array.</td>
+            </tr>
+            <tr>
+                <td>pop()</td>
+                <td>Removes the last element in an array.</td>
+            </tr>
+            <tr>
+                <td>unshift()</td>
+                <td>Adds new items to the end of an array. Returns new array && array.length.</td>
+            </tr>
+            <tr>
+                <td>shift()</td>
+                <td>Removes the first element from an array and returns that element, resulting in a change in length of an array.</td>
+            </tr>
+            <tr>
+                <td>reverse()</td>
+                <td>Reverses the order of elements in an array.</td>
+            </tr>
+            <tr>
+                <td>sort()</td>
+                <td>Sorts array alphabetically, in ascending order. Returns an array in new sort order</td>
+            </tr>
+            <tr>
+                <td>slice()</td>
+                <td>Selects a portion of an array and returns it as a new array.</td>
+            </tr>
+            <tr>
+                <td>splice()</td>
+                <td>Returns a new array comprised of elements that were added to or removed from a given array.</td>
+            </tr>
+            <tr>
+                <td>toString()</td>
+                <td>Converts an array to a string.</td>
+            </tr>
+            <tr>
+                <td>forEach()</td>
+                <td>Calls a function for each element in an array.</td>
+            </tr>
+        </table>
+    </div>
+    </body>
+</html>
