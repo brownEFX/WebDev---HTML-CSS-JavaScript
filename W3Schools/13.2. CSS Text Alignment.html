@@ -1,0 +1,195 @@
+//1. CSS Text Alignment
+***
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<html lang="en-UK">
+		<title>CSS Text Alignment</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+	</head>
+
+	<style>
+
+	</style>
+
+	<body>
+
+	<h1>CSS Text Alignment</h1>
+	<pre><p>
+
+		<a href="https://www.w3schools.com/css/css_text_align.asp">CSS Text Alignment</a>
+
+	<pre><p>
+
+<h2>Text Alignment</h2>
+	<pre><p>
+		**The text-align property is used to set the horizontal alignment of a text.
+		**A text can be left or right aligned, centered, or justified.
+		
+	<strong>Example 1 - Text-align left, center, right</strong>
+	***The following example shows center aligned, and left and right aligned text
+	***Left alignment is default if text direction is left-to-right
+	***Right alignment is default if text direction is right-to-left:
+	
+		/style>
+			h1 {
+			  text-align: center;
+			}
+
+			h2 {
+			  text-align: left;
+			}
+
+			h3 {
+			  text-align: right;
+			}
+		/style>
+			<p>The three headings above are aligned center, left and right.</p>
+			<h1>Heading 1 (center)</h1>
+			<h2>Heading 2 (left)</h2>
+			<h3>Heading 3 (right)</h3>
+
+	<strong>Example 2 - Text-align justify</strong>
+	***When the text-align property is set to "justify", each line is stretched so that every line has equal width, and the left and right margins are straight:
+	
+		/style>
+		div {
+		  border: 1px solid black;
+		  padding: 10px;
+		  width: 200px;
+		  height: 200px;
+		  text-align: justify;
+		}
+		/style>
+
+		<h1>Example text-align: justify</h1>
+
+		<p>The text-align: justify; value stretches the lines so that each line has equal width (like in newspapers and magazines).</p>
+
+		<div>
+		In my younger and more vulnerable years my father gave me some advice that I've been turning over in my mind ever since. 
+		'Whenever you feel like criticizing anyone,' he told me, 'just remember that all the people in this world haven't had the advantages that you've had.'
+		</div>
+
+<h2>Text Align Last</h2>
+	<pre><p>
+		**The text-align-last property specifies how to align the last line of a text.
+		
+	<strong>Example 1 - Align the last line of text in three /p> elements:</strong>
+
+	/style>
+		p.a {
+		  text-align-last: right;
+		}
+
+		p.b {
+		  text-align-last: center;
+		}
+
+		p.c {
+		  text-align-last: justify;
+		}
+	/style>
+
+<h3>The text-align-last Property</h3>
+
+	<h3>text-align-last: right:</h3>
+		<p class="a">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+			Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+			Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+		</p>
+
+	<h3>text-align-last: center:</h3>
+		<p class="b">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+		Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+		</p>
+
+	<h3>text-align-last: justify:</h3>
+		<p class="c">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+		Etiam semper diam at erat pulvinar, at pulvinar felis blandit. 
+		Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.
+		</p>
+
+<h2>Text Direction</h2>
+	<pre><p>
+		**The direction and unicode-bidi properties can be used to change the text direction of an element:
+		
+	<strong>Example 1 - Text Direction</strong>
+	
+		/style>
+			p.ex1 {
+			  direction: rtl;
+			  unicode-bidi: bidi-override;
+			}
+		/style>
+
+		<p>This is the default text direction.</p>
+
+		<p class="ex1">This is right-to-left text direction.</p>
+	
+	</pre></p>
+
+
+<h2>Vertical Alignment</h2>
+	<pre><p>
+		**The vertical-align property sets the vertical alignment of an element.
+		
+	<strong>Example 1 - Set the vertical alignment of an image in a text: </strong>
+	
+	/style>
+		img.a {
+		  vertical-align: baseline;
+		}
+
+		img.b {
+		  vertical-align: text-top;
+		}
+
+		img.c {
+		  vertical-align: text-bottom;
+		}
+
+		img.d {
+		  vertical-align: sub;
+		}
+
+		img.e {
+		  vertical-align: super;
+		}
+	/style>
+
+	<h1>The vertical-align Property</h1>
+
+	<h2>vertical-align: baseline (default):</h2>
+	<p>An <img class="a" src="sqpurple.gif" width="9" height="9"> image with a default alignment.</p> 
+
+	<h2>vertical-align: text-top:</h2>
+	<p>An <img class="b" src="sqpurple.gif" width="9" height="9"> image with a text-top alignment.</p> 
+
+	<h2>vertical-align: text-bottom:</h2>
+	<p>An <img class="c" src="sqpurple.gif" width="9" height="9"> image with a text-bottom alignment.</p>
+
+	<h2>vertical-align: sub:</h2>
+	<p>An <img class="d" src="sqpurple.gif" width="9" height="9"> image with a sub alignment.</p> 
+
+	<h2>vertical-align: sup:</h2>
+	<p>An <img class="e" src="sqpurple.gif" width="9" height="9"> image with a super alignment.</p>
+	<pre><p>
+
+
+	</body>
+</html>
+
+//The CSS Text Alignment/Direction Properties
+Property			Description
+direction			Specifies the text direction/writing direction
+text-align			Specifies the horizontal alignment of text
+text-align-last		Specifies how to align the last line of a text
+unicode-bidi		Used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document
+vertical-align		Sets the vertical alignment of an element
