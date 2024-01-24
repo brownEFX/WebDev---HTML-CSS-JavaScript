@@ -1,0 +1,124 @@
+//declare variables
+var story = document.getElementById("story");
+var siteFooter = document.getElementById("siteFooter");
+var question = document.getElementById("question");
+var answer = document.getElementById("answer");
+var yourAnswer = document.getElementById("yourAnswer");
+
+
+// todo: make an empty array called answers
+var answers = [];
+
+/* todo: listen for clicks on the submit button and call the getAnswer()*/
+//Using onClick method: document.getElementById("submit").onclick = getAnswer;
+//Using addEventListener() method: document.getElementById("submit").addEventListener("click", getAnswer);
+//Using variable && addEventListener:
+var submit = document.getElementById("submit");
+submit.addEventListener("click", getAnswer);
+
+
+// Call the function to ask the first question
+askQuestion(0);
+
+/* askQuestion() asks a question, based on the number passed to it */
+function askQuestion(questionNumber) {
+    //Change value of display property of answer div to display field and button:
+    answer.style.display = "block";
+
+    //Change length of answers[] to match question number:
+    answers.length = questionNumber;
+
+    // switch statement uses the argument passed into the function to determine which question to answer
+    switch (questionNumber) {
+        case 0:
+            question.innerHTML = "Are you ready to play?";
+            break;
+        case 1:
+            question.innerHTML = "Go to Mars or stay home?";
+            break;
+        case 2:
+            question.innerHTML = "Risk it, or go home.";
+            break;
+        default:
+            break;
+    }
+
+}
+
+/* getAnswer() gets the answer, pushes it into the answers array, call continueStory function */
+function getAnswer() {
+    //Get the value from the input field and convert it to uppercase
+    //This makes User entry to not be Case Sensitive
+    cleanInput = yourAnswer.value.toUpperCase();
+
+    //add answer to answers[];
+    answers.push(cleanInput);
+
+    //Reset the input field:
+    yourAnswer.value = "";
+
+    //Call continueStory, pass nth index of answers[]:
+    continueStory(answers.length - 1);
+
+}
+
+/* continueStory() displays part of the story/error based on the value of an item in the answers array */
+function continueStory(answerNumber) {
+    switch (answerNumber) {
+        case 0: //If User responded to the first question, run:
+            if (answers[0] === "YES") {
+                //Gets element from div where id="answer01", overwrites contents with ID of story
+                story.innerHTML = document.getElementById("answer01").innerHTML;
+                askQuestion(1); //Calls askQuestion(), asks Q1
+            } else if (answer[0] === "NO") {
+                story.innerHTML = document.getElementById("answer02").innerHTML;
+                askQuestion(0);
+            } else {
+                story.innerHTML = document.getElementById("err0").innerHTML;
+                askQuestion(0);
+            }
+            break;
+        case 1:
+            if (answers[1] === "GO TO MARS") {
+                story.innerHTML = document.getElementById("answer11").
+                    innerHTML;
+                askQuestion(2);
+            } else if (answers[1] === "STAY HOME") {
+                story.innerHTML = document.getElementById("answer12").
+                    innerHTML;
+                theEnd();
+            } else {
+                story.innerHTML = document.getElementById("err1").innerHTML;
+                askQuestion(1);
+            }
+            break;
+        case 2:
+            if (answers[2] === "RISK IT") {
+                story.innerHTML = document.getElementById("answer21").
+                    innerHTML;
+                theEnd();
+            } else if (answers[2] === "GO HOME") {
+                story.innerHTML = document.getElementById("answer22").
+                    innerHTML;
+                theEnd();
+            } else {
+                story.innerHTML = document.getElementById("err2").innerHTML;
+                askQuestion(2);
+            }
+            break;
+        default:
+            story.innerHTML = "The story is over!";
+            break;
+    }
+
+}
+
+/* theEnd() ends the story and hides the input field */
+function theEnd() {
+    //print out “The End”
+    story.innerHTML += "<p>The End.</p>";
+    //Erase the last question asked from the question div
+    question.innerHTML = "";
+    //Hide the input field and button
+    answer.style.display = "none";
+}
