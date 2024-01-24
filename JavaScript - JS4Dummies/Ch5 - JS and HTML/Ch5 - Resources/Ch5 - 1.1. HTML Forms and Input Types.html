@@ -1,0 +1,111 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+	<head>
+		<html lang="en-UK">
+		<meta charset="UTF-8"> <!--Define the character set used:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+        <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+        <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+        <title>Programming the Web</title>	
+	
+		<style>
+			body {
+				font-family: Helvetica,sans-serif;
+				font-size: 15px;
+				line-height: 1.5;
+				}
+			h1{
+				color: black;
+				font-family:Helvetica;
+				font-size: 1.6em;
+				font-weight: bold;
+				line-height: 1.25em;
+				margin-bottom: 12px;
+				}
+			h2{
+				color: black;
+				font-family:Arial;
+				font-size: 1.2em;
+				font-weight: bold;
+				}
+			table, p{
+				color: black;
+				font-size: 16px;
+				font-weight: normal;
+				/*font-family:'Segoe UI'; "font-family:Segoe UI, Tahoma, sans-serif;"*/
+				font-family: Arial /*Segoe UI, Tahoma, sans-serif; */
+				}
+			table, th, td {
+				border:1px solid black;
+				/*To avoid double-borders*/
+				border-collapse: collapse;
+				/*To give borders rounded corners:
+				border-radius: 10px;
+				/*{{dotted, dashed, solid, double, groove, ridge, inset, outset, hidden, none}}*/
+				border-style: solid  
+				}
+			tr:nth-child(even) {
+				background-color: #D6EEEE;
+				}
+			tr:hover {
+				background-color: #D6EEEE;
+				}
+		</style>
+		
+	</head>
+	<body>
+		<h2>Input field</h2>
+<form>
+	<div>
+		<caption><b>Customer:</b></caption><br>
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname" value="John"><br>
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname" value="Doe"><br><br>
+	</div>
+	
+	<div>
+	<label for="city">City</label>
+	<input type="text" id="city" name="city" value="Jozi">
+	<label for="province">Province</label>
+	<input type="text" id="province" name="province" value="Gauteng">
+	</div>
+</form>
+  
+<h2>Styling a select menu</h2>
+
+  <form>
+  <caption>Province:</caption>
+		<select id="province" name="province">
+		<option value="gp">Gauteng</option>
+		<option value="wc">Western Cape</option>
+		<option value="ec">Eastern Cape</option>
+		<option value="kzn">Kwa-Zulu Natal</option>
+		<option value="fs">Free State</option>
+	</select>
+  </form>
+  
+  <br><br>
+  
+  <form>
+  <caption>City:</caption>
+	<select id="metro" name="metro">
+		<option value="CoT">City of Tshwane</option>
+		<option value="CoJ">City of Johannesburg</option>
+		<option value="BC">Buffalo City</option>
+		<option value="CoE">City of eThekwini</option>
+		<option value="MM">Mangaung Metro</option>
+	</select>
+  </form>
+  
+  <h2>Input field with an icon inside</h2>
+
+	<form>
+	  <input type="text" name="search" placeholder="Search..">
+	</form>
+
+</form>	
+	</body>
+</html>
