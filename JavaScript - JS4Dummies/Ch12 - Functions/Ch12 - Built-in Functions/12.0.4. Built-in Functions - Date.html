@@ -1,0 +1,90 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+
+<head>
+    <html lang="en-UK">
+    <meta charset="UTF-8"> <!--Define the character set used:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+    <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+    <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+    <title>Functions</title>
+
+    <style>
+        body {
+            font-family: Google Sans, arial, sans-serif;
+            /*Helvetica,sans-serif; | Verdana,sans-serif;*/
+            font-size: 15px;
+            line-height: 1.5;
+        }
+
+        #builtInFunctions,
+        h1 {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+
+            width: 40%;
+        }
+
+        #builtInFunctions td,
+        #builtInFunctions th {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        #builtInFunctions tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        #builtInFunctions tr:hover {
+            background-color: #ddd;
+        }
+
+        #builtInFunctions th {
+            padding-top: 8px;
+            padding-bottom: 4px;
+            text-align: left;
+            background-color: #000000;
+            border-bottom: 4px solid orange;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>JavaScript Built-in Functions</h1>
+    <h2>Date Functions:</h2>
+
+    <h1>JavaScript Dates</h1>
+
+    <h2>The new Date() Method</h2>
+        <p><b>Create a new date object with the current date and time:</b></p> 
+        <div id="newDate"></div>
+        <!-- <div id="newDate2"></div> -->
+
+    <h2>The getMonth()</h2>
+        <h3>The getMonth() Method - Get the month(number):</h3>
+          <p>getMonth() returns the month (from 0 to 11) of a date:</p>
+          <p id="getMonthNumber"></p>
+        
+        <h3>The getMonth() Method - Get the name of the month:</h3>
+          <p>getMonth() returns the month (from 0 to 11) of a date:</p>
+          <p id="getMonthName"></p>
+
+    <h2>The getDate() Method - Get the day of the month:</h2>
+        <p>getDate() returns the day of the month (from 1 to 31) of a date:</p>
+        <p id="getDayOfMonth"></p>
+
+    <h2>The getDate() Method - Get the day of a specific date:</h2>
+        <p>getDate() returns the day of the month (from 1 to 31) of a date:</p>
+        <p id="getSpecificDate"></p>
+
+    <h2>The getFullYear() Method - Get the year:</h2>
+        <p>getFullYear() returns the year of a date:</p>
+        <div id="getFullYear"></div>
+
+    <script src="12.0.4. Built-in Functions - Date.js"> </script>
+</body>
+
+</html>
