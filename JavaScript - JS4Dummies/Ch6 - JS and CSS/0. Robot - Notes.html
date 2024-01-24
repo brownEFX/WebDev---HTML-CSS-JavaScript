@@ -1,0 +1,64 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+	<head>
+		<html lang="en-UK">
+		<meta charset="UTF-8"> <!--Define the character set used:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+        <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+        <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+        <title>Programming the Web</title>	
+	
+		<style>
+
+			/*Element Selector Uses elementName*/
+			body { 
+				/*font-family: Arial;*/
+				font-family: Helvetica; /*"Comic Sans MS", cursive, sans‐serif;*/
+			}
+			/*CSS Declarations:Property:Value*/
+			p {
+				font-size: 1.0em; /*em = relative to the font-size of the element (2em means 2 times the size of the current font)*/
+			}
+        </style>
+        <body>
+            <h1>Changing CSS with JavaScript</h1>
+                <p>
+                    "getElementById("idName")..."
+                    "getElementByClassName("className")..."
+                    "getElementByTagName("tagName")..."
+
+                    document.getElementByTagName("p").style.fontFamily="Helvatica";
+                    document.getElementByTagName("p").style.fontFamily="Helvatica";
+
+                    document.getElementsByClassName("eye").style.backgroundColor = "purple";
+                    document.getElementsByClassName("arm").style.backgroundColor = "blue";
+
+                    document.getElementById("head").style.backgroundColor = "yellow";
+                    document.getElementById("righteye").style.backgroundColor = "purple";
+                </p>
+
+                <h1>Handling Events with JavaScript</h1>
+                <h2>Events in JavaScript</h2>
+                <p>
+                    Events: mouseclick, keypress, dragging and dropping, hovering your, selecting text.
+                    Events: Click, Submit, drag, drop, copy, pase, mouseover, load
+                    Other Events: pageload, display elements, errors, animations completing
+                    addEventListener method to tell programs what to do when events happen.
+                </p>
+                <hr>
+
+                <h2>addEventListener method in JavaScript</h2>
+                <p>
+                    Tells JavaScript to listen for events
+                    addEventListener method to tell programs what to do when events happen.
+
+                    EventListener Syntax: 
+                    
+                        eventTarget.addEventListener("eventName", listener)
+                        
+                </p>
+                <hr>
+
+        </body>

@@ -1,0 +1,110 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+	<head>
+		<html lang="en-UK">
+		<meta charset="UTF-8"> <!--Define the character set used:-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+        <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+        <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+        <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+        <title>1. Robot Style - Start - ORIGINAL</title>	
+	
+		<style>
+			/*Element Selector Uses elementName*/
+			body { 
+				/*font-family: Arial;*/
+				font-family: Helvetica; /*"Comic Sans MS", cursive, sans‐serif;*/
+			}
+			/*CSS Declarations:Property:Value*/
+			p {
+				font-size: 2.0em; /*em = relative to the font-size of the element (2em means 2 times the size of the current font)*/
+			}
+			/*Class Selector Uses period+className*/
+			.eye {
+				background-color:black;
+				width:20%;
+				height:20%;
+				border-radius: 50%;
+			}
+			/*Id Selector Uses hashSymbol*/
+			.arm {
+				background-color: #cacaca;
+				/*An element with position: absolute; is positioned relative to the nearest positioned ancestor*/
+				position: absolute;
+				top: 35%;
+				width: 5%;
+				height: 40%;
+			}
+
+			#head {
+				width:30%;
+				height:30%;
+				border-radius: 15%;
+				background-color: #dadada;
+				position: absolute;
+				left: 33%;
+				top: 5%;
+			}
+			#righteye {
+				position: absolute;
+				left: 20%;
+				top: 20%;
+			}
+			#lefteye {
+				position: absolute;
+				left: 60%;
+				top: 20%;
+			}
+			#nose {
+				position: absolute;
+				left: 45%;
+				top: 50%;
+				width: 10%;
+				height: 10%;
+				background-color: black;
+			}
+			#mouth {
+				position: absolute;
+				width: 65%;
+				height: 15%;
+				left: 20%;
+				top: 70%;
+				background-color: red;
+			}
+			#body {
+				position: absolute;
+				left: 25%;
+				top: 35%;
+				width: 45%;
+				height: 55%;
+				background-color: #dadada;
+				text-align:center;
+				padding-top: 30px;
+			}
+
+			#rightarm {
+				position:absolute;
+				left:20%;
+			}
+			#leftarm {
+				position: absolute;
+				left: 70%;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div id="robot">
+			<div id="head">
+				<div class="eye" id="righteye"></div>
+				<div class="eye" id="lefteye"></div>
+				<div id="nose"></div>
+				<div id="mouth"></div>
+			</div>
+			<div class="arm" id="rightarm"></div>
+			<div id="body"><p>I &lt;3 JS!</p></div>
+			<div class="arm" id="leftarm"></div>
+			</div>
+	</body>
+</html>
