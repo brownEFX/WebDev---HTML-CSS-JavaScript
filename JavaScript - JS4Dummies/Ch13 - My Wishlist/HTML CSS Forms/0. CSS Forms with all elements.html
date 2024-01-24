@@ -1,0 +1,304 @@
+//0. CSS Forms will all elements
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<html lang="en-UK">
+		<title>CSS Forms</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">		
+	</head>
+	<style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 14px;
+    }
+
+		* {
+		  box-sizing: border-box;
+		}
+
+		input[type=text], input[type=date],input[type=email],input[type=tel],input[type=password], input[type=url],input[type=search],select, textarea {
+		  width: 100%;
+		  padding: 12px;
+		  border: 1px solid #ccc;
+		  border-radius: 4px;
+		  resize: vertical;
+		}
+
+		label {
+		  padding: 12px 12px 12px 0;
+		  display: inline-block;
+		}
+
+		input[type=button],input[type=reset],input[type=submit] {
+		  background-color: #04AA6D;
+		  color: white;
+		  padding: 12px 20px;
+		  border: none;
+		  border-radius: 4px;
+          margin: 4px 2px;
+		  cursor: pointer;
+		  float: right;
+		}
+
+		input[type=submit]:hover {
+		  background-color: #45a049;
+		}
+
+		.container {
+		  border-radius: 5px;
+		  background-color: #f2f2f2;
+		  padding: 20px;
+		}
+
+		.col-25 {
+		  float: left;
+		  width: 25%;
+		  margin-top: 6px;
+		}
+
+		.col-75 {
+		  float: left;
+		  width: 75%;
+		  margin-top: 6px;
+		}
+
+		/* Clear floats after the columns */
+		.row::after {
+		  content: "";
+		  display: table;
+		  clear: both;
+		}
+
+		/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+		  .col-25, .col-75, input[type=submit] {
+			width: 100%;
+			margin-top: 0;
+		  }
+		}
+	</style>
+</head>
+<body>
+
+<h2>Responsive Form</h2>
+<p>Resize the browser window to see the effect. When the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other.</p>
+
+		<div class="container">
+		  <form action="/action_page.php">
+		  
+          <!--First Name-->
+		  <div class="row">
+			<div class="col-25">
+			  <label for="fname">First Name</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+			</div>
+		  </div>
+		  
+          <!--Last Name-->
+		  <div class="row">
+			<div class="col-25">
+			  <label for="lname">Last Name</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+			</div>
+		  </div>
+		  <br>
+
+          <!--DoB-->
+          <div>
+            <div class="row">
+              <div class="col-25">
+                <label for="dob">Date of Birth</label>
+              </div>
+              
+			 <div class="col-75">
+			  <input type="date" id="birthday" name="birthday">
+			</div>
+		  </div>
+          
+          <!--Salutation-->
+          <div>
+            <div class="row">
+			<div class="col-25">
+			  <label for="title">Title</label>
+			</div>
+			<div class="col-75">
+            <select id="title" name="title"> 
+              <option value="mr">Mr.</option>
+              <option value="mrs">Mrs.</option>
+              <option value="ms">Ms.</option>
+              <option value="dr">Dr.</option>
+              <option value="prof">Prof.</option>
+              <option value="other">Other</option>
+            </select>
+			</div>
+		  </div>
+          <br>
+          
+          <!--<input type="tel">-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="tel">Tel.</label>
+			</div>
+			<div class="col-75">
+			  <input type="tel" id="tel" name="tel" placeholder="+27 000 0000">
+			</div>
+		  </div>
+		  <br>
+          
+           <!--<input type="email">-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="Email">Email</label>
+			</div>
+			<div class="col-75">
+			  <input type="email" id="email" name="email" placeholder="me@example.com...">
+			</div>
+		  </div>
+		  <br>
+          
+          
+          <!--<input type="url">-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="url">URL</label>
+			</div>
+			<div class="col-75">
+			  <input type="url" id="url" name="url" placeholder="https://www.example.com...">
+			</div>
+		  </div>
+		  <br>
+          
+           <!--<input type="text"> Username-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="username">Username</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" id="username" name="username" placeholder="me@example.com...">
+			</div>
+		  </div>
+		  <br>
+          
+           <!--<input type="password">-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="password">Password</label>
+			</div>
+			<div class="col-75">
+			  <input type="password" id="password" name="password">
+			</div>
+		  </div>
+		  <br>
+           
+           <!--Highest Qualification-->
+           <div class="row">
+              <input type="radio" id="matric" name="qualification" value="matric">
+              <label for="matric">Matric</label><br>
+              <input type="radio" id="diploma" name="qualification" value="diploma">
+              <label for="diploma">Diploma</label><br>
+              <input type="radio" id="bachelors" name="qualification" value="bachelors">
+              <label for="bachelors">Bachelors</label><br>
+              <input type="radio" id="post-grad" name="qualification" value="post-grad">
+              <label for="post-grad">Post-grad Degree</label><br>
+          </div>
+          
+          <!--Own Transport-->
+          <br>
+           <div class="row">
+            <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+            <label for="vehicle1"> I have a bike</label><br>
+            <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+            <label for="vehicle2"> I have a car</label><br>
+            <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+            <label for="vehicle3"> I have a boat</label>
+		  </div>
+          
+          <!--Province-->
+		  <div class="row">
+			<div class="col-25">
+			  <label for="province">Province</label>
+			</div>
+			<div class="col-75">
+            <select id="province" name="province">
+              <option value="gp">Gauteng</option>
+              <option value="wc">Western Cape</option>
+              <option value="ec">Eastern Cape</option>
+              <option value="kzn">Kwa-Zulu Natal</option>
+              <option value="fs">Free State</option>
+            </select>
+			</div>
+		  </div>
+            <div class="row">
+			<div class="col-25">
+			  <label for="metro">Metropolitan Municipality</label>
+			</div>
+			<div class="col-75">
+            <select id="metro" name="metro"> 
+              <option value="CoT">City of Tshwane</option>
+              <option value="CoJ">City of Johannesburg</option>
+              <option value="BC">Buffalo City</option>
+              <option value="CoE">City of eThekwini</option>
+              <option value="MM">Mangaung Metro</option>
+            </select>
+			</div>
+		  </div>
+		  
+		  <div class="row">
+			<div class="col-25">
+			  <label for="comments">Comments</label>
+			</div>
+			<div class="col-75">
+			  <textarea id="comments" name="comments" placeholder="Comments..." style="height:200px"></textarea>
+			</div>
+		  </div>
+		  <br>
+          <br>
+          
+            <!--<input type="file">-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="myfile">Select a file:</label>
+			</div>
+			<div class="col-75">
+			  <input type="file" id="myfile" name="myfile">
+			</div>
+		  </div>
+		  <br>
+  
+   <!--<input type="search"> Username-->
+          <div class="row">
+			<div class="col-25">
+			  <label for="gsearch">Search Google:</label>
+			</div>
+			<div class="col-75">
+			  <input type="search" id="gsearch" name="gsearch" placeholder="Enter search criteria...">
+			</div>
+		  </div>
+		  <br>
+          
+          <div class="row">
+			<div class="col-25">
+			  <label for="search">Search</label>
+			</div>
+			<div class="col-75">
+			  <input type="text" name="search" transition="width 0.4s ease-in-out" placeholder="Enter search criteria...">
+			</div>
+		  </div>
+		  <br>
+         
+		  <div class="row">
+          	<input type="button" value="Button">
+			<input type="reset" value="Reset">
+			<input type="submit" value="Submit">
+		  </div>
+		  </form>
+		</div>
+
+	</body>
+</html>

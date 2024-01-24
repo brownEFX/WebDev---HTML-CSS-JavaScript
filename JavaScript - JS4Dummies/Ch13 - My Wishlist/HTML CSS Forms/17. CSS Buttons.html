@@ -1,0 +1,211 @@
+//CSS Buttons
+***
+
+<!DOCTYPE html>
+<html>
+<head>
+    <html lang="en-UK">
+    <title>CSS Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">	
+
+  <style>
+    body {
+      color: black;
+      font-family: Helvetica, Verdana, sans-serif;
+      font-size: 16px;
+      background-image: url("paper.gif");
+      text-align: center;
+    }
+
+  </style>
+</head>
+
+	<body>
+	<h1>CSS Buttons</h1>
+		<pre><p>
+			<a href="https://www.w3schools.com/css/css3_buttons.asp">CSS Buttons</a>
+		</p></pre>
+		
+	<h2>Basic Button Styling</h2>
+
+		<strong>Example - Basic Button Styling</strong>
+			/style>
+			  body {
+				color: black;
+				font-family: Helvetica, Verdana, sans-serif;
+				font-size: 16px;
+				background-image: url("paper.gif");
+				style:text-align:center;
+			  }
+			.button {
+			  background-color: #4CAF50;
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+			/style>
+			
+			<h3>CSS Buttons</h3>
+
+				<button>Default Button</button>
+				<a href="#" class="button">Link Button</a>
+				<button class="button">Button</button>
+				<input type="button" class="button" value="Input Button">
+
+	<h2>Button Colors</h2>
+		<pre><p>
+			Use the background-color property to change the background color of a button:
+		</p></pre>
+		
+		<strong>Example - Basic Button Styling</strong>
+			/style>
+			  body {
+				color: black;
+				font-family: Helvetica, Verdana, sans-serif;
+				font-size: 16px;
+				background-image: url("paper.gif");
+				style:text-align:center;
+			  }
+			.button {
+			  background-color: #4CAF50; /* Green */
+			  border: none;
+			  color: white;
+			  padding: 15px 32px;
+			  text-align: center;
+			  text-decoration: none;
+			  display: inline-block;
+			  font-size: 16px;
+			  margin: 4px 2px;
+			  cursor: pointer;
+			}
+
+			.button2 {background-color: #008CBA;} /* Blue */
+			.button3 {background-color: #f44336;} /* Red */ 
+			.button4 {background-color: #e7e7e7; color: black;} /* Gray */ 
+			.button5 {background-color: #555555;} /* Black */
+			/style>
+
+			<h2>Button Colors</h2>
+
+				<p>Change the background color of a button with the background-color property:</p>
+
+				<button class="button">Green</button>
+				<button class="button button2">Blue</button>
+				<button class="button button3">Red</button>
+				<button class="button button4">Gray</button>
+				<button class="button button5">Black</button>
+
+	<h2>Button Sizes</h2>
+		<pre><p>
+			Use the font-size property to change the font size of a button:
+		</p></pre>
+		
+		<strong>Example - Basic Button Styling</strong>
+			/style>
+			  body {
+				color: black;
+				font-family: Helvetica, Verdana, sans-serif;
+				font-size: 16px;
+				background-image: url("paper.gif");
+				style:text-align:center;
+			  }
+			  .button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				border-radius: 4px;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 2px;
+				cursor: pointer;
+				border: 2px solid #e7e7e7;
+				transition-duration: 0.4s;
+			  }
+
+			  .button:hover {
+				background-color: #45a049;
+				box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+			  }
+
+			.button1 {font-size: 10px;}
+			.button2 {font-size: 12px;}
+			.button3 {font-size: 16px;}
+			.button4 {font-size: 20px;}
+			.button5 {font-size: 24px;}
+			/style>
+
+			<h2>Button Sizes</h2>
+
+			<p>Change the font size of a button with the font-size property:</p>
+
+			<button class="button button1">10px</button>
+			<button class="button button2">12px</button>
+			<button class="button button3">16px</button>
+			<button class="button button4">20px</button>
+			<button class="button button5">24px</button>
+
+	<h2>Disabled Buttons</h2>
+		<pre><p>
+			Use the opacity property to add transparency to a button (creates a "disabled" look).
+			<b>Tip:</b> You can also add the cursor property with a value of "not-allowed", which will display a "no parking sign" when you mouse over the button:
+		</p></pre>
+		
+		<strong>Example - Disabled Buttons</strong>
+			/style>
+			  body {
+				color: black;
+				font-family: Helvetica, Verdana, sans-serif;
+				font-size: 16px;
+				background-image: url("paper.gif");
+				style:text-align:center;
+			  }
+			  .button {
+				background-color: #4CAF50; /* Green */
+				border: none;
+				border-radius: 4px;
+				width: 120px;
+				color: white;
+				padding: 15px 32px;
+				text-align: center;
+				text-decoration: none;
+				display: inline-block;
+				margin: 4px 2px;
+				cursor: pointer;
+				border: 2px solid #e7e7e7;
+				transition-duration: 0.4s;
+			  }
+			  .disabled {
+				opacity: 0.6;
+				cursor: not-allowed;
+		    /style>
+			
+			<h2>Disabled Button</h2>
+
+				<p>Use the opacity property to add some transparency to a button (make it look disabled):</p>
+
+				<button class="button">Normal Button</button>
+				<button class="button disabled">Disabled Button</button>
+			
+			
+	</body>
+</html>
+
+//CSS Masking Properties
+Property		Description
+mask-image		Specifies an image to be used as a mask layer for an element
+mask-mode		Specifies whether the mask layer image is treated as a luminance mask or as an alpha mask
+mask-origin		Specifies the origin position (the mask position area) of a mask layer image
+mask-position	Sets the starting position of a mask layer image (relative to the mask position area)
+mask-repeat		Specifies how the mask layer image is repeated
+mask-size		Specifies the size of a mask layer image
+
+
