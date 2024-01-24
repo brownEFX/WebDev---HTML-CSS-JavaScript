@@ -1,0 +1,72 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+
+<head>
+    <html lang="en-UK">
+    <meta charset="UTF-8"> <!--Define the character set used:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+    <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+    <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+    <title>Programming the Web</title>
+
+    <style>
+        #car {font-family: Arial;
+        }
+
+        #body {
+            position: absolute;
+            top: 50px;
+            width: 80%;
+            height: 100px;
+            background-color: #000000;
+            border: 1.5px ridge black;
+            text-align: center;
+            color: rgb(0, 255, 115);
+            font-size: 14px;
+            font-weight: bold;
+            /*padding: 25px 50px 75px 100px;
+            margin: 25px 50px 75px 100px;*/
+            /*padding: 50px 30px 50px 30px;*/
+        }
+
+        #backwheel {
+            position: absolute;
+            left: 10%;
+            top: 130px;
+            background-color: #ffffff;
+            border: 5px solid black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+
+        #frontwheel {
+            position: absolute;
+            left: 55%;
+            top: 130px;
+            background-color: #ffffff;
+            border: 5px inset black;
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+        }
+    </style>
+
+<body>
+
+    <!--Create dreamCar frame-->
+    <div id="car">
+        This <span id="modelyear"></span> dream car can be yours for
+        just: $<span id="pricetag"></span>
+        <div id="body"></div>
+        <div id="frontwheel"></div>
+        <div id="backwheel"></div>
+    </div>
+
+    <script src="1. Operands - Objects.js"> </script>
+
+</body>
+
+    </html>
