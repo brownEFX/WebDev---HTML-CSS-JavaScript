@@ -1,0 +1,129 @@
+<!DOCTYPE html> <!--just a declaration. It simply says, “This is an HTML document.” -->
+<html> <!-- All HTML documents must have an html element as their outermost element. -->
+
+<head>
+    <html lang="en-UK">
+    <meta charset="UTF-8"> <!--Define the character set used:-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Website on all devices:-->
+    <meta name="description" content="JS for Kids tutorials"> <!--Description of your web page:-->
+    <meta name="keywords" content="HTML, CSS, JavaScript"> <!--Define keywords for search engines:-->
+    <meta name="author" content="Karabo Tabane"> <!--Define the author of a page:-->
+
+    <title>Array Methods</title>
+
+    <style>
+        body {
+            font-family: Google Sans,arial,sans-serif; /*Helvetica,sans-serif; | Verdana,sans-serif;*/
+            font-size: 15px;
+            line-height: 1.5;
+            }
+		#dateMethods, h1 {
+			font-family: Arial, Helvetica, sans-serif;
+			border-collapse: collapse;
+			width: 40%;
+		}
+
+		#dateMethods td,
+		#dateMethods th {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		#dateMethods tr:nth-child(even) {
+			background-color: #f2f2f2;
+		}
+
+		#dateMethods tr:hover {
+			background-color: #ddd;
+		}
+
+		#dateMethods th {
+			padding-top: 8px;
+			padding-bottom: 4px;
+			text-align: left;
+			background-color: #000000;
+			border-bottom: 4px solid orange;
+			color: white;
+		}
+        li {
+            /*Line-height creates more space between list items */
+            line-height: 16px;
+            /*Make input field labels UpperCase.*/
+            text-transform: none;
+            /*margin-top for more space between list items*/
+            margin-top: 3px;
+        }
+        #buttonDiv {
+            text-align: left;
+        }
+        #replaceButton {
+            margin-top: 30px;
+            width: 200px;
+        }
+        .replacement {
+            text-decoration: underline ridge blue;
+            /*text-transform: none; | text-transform: uppercase; | text-transform: capitalize;*/
+            /*text-transform: uppercase;*/
+        }
+    </style>
+</head>
+
+<body>  
+    <div>
+        <h1>JavaScript Date Methods</h1>
+
+        <table id="dateMethods">
+            <caption><b>JavaScript Date Methods</b></caption>
+            <tr>
+                <th>Method</th>
+                <th style="width: 5000px">What is does</th>
+            </tr>
+            <tr>
+                <td>getTime()</td>
+                <td>Gets the time, in milliseconds (Unix).</td>
+            </tr> 
+            <tr>
+                <th colspan="2">Date - set Methods:</th>
+            </tr>
+            <tr>
+                <td>getTime()</td>
+                <td>Gets the time, in milliseconds (Unix).</td>
+            </tr> 
+            <tr>
+                <td>setDate()</td>
+                <td>Sets the day of the month (1–31).</td>
+            </tr> 
+            <tr>
+                <td>setDay()</td>
+                <td>Sets the day of the week as a number (0–6).</td>
+            </tr> 
+            <tr>
+                <td>setFullYear()</td>
+                <td>Sets the year (yyyy).</td>
+            </tr> 
+            <tr>
+                <td>setHours()</td>
+                <td>Sets the hour (0–23).</td>
+            </tr> 
+            <tr>
+                <td>setMilliseconds()</td>
+                <td>Sets the fraction of a second (0–999).</td>
+            </tr> 
+            <tr>
+                <td>setMonth()</td>
+                <td>Sets the month (0–11).</td>
+            </tr> 
+            <tr>
+                <td>setSeconds()</td>
+                <td>Sets the seconds (0–59).</td>
+            </tr>        
+            <tr>
+                <td>setTime()</td>
+                <td>Sets the time, in milliseconds (Unix).</td>
+            </tr>  
+        </table>
+    </div>
+    </body>
+
+    <script src="15.0.2. Date Methods - set.js"></script>
+</html>
